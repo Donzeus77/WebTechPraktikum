@@ -1,0 +1,16 @@
+.grid-layout {
+  display: grid;
+  grid-template-areas: "main aside";
+  grid-template-columns: minmax(0, 3fr) minmax(15rem, 1fr);
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.grid-layout main {
+  grid-area: main;
+}
+
+.grid-layout aside {
+  grid-area: aside;
+}
+
