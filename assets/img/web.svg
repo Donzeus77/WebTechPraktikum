@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Web-Entwicklung</title>
+  <rect width="160" height="160" rx="24" fill="#d7e8f4"/>
+  <rect x="25" y="35" width="110" height="85" rx="8" fill="#173f5f"/>
+  <rect x="34" y="50" width="92" height="58" fill="#fff"/>
+  <path d="m67 66-18 14 18 14m26-28 18 14-18 14M86 60 75 99" fill="none" stroke="#e76f51" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 132h40" stroke="#173f5f" stroke-width="9" stroke-linecap="round"/>
+</svg>

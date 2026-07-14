@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Kochen</title>
+  <rect width="160" height="160" rx="24" fill="#fde2c5"/>
+  <path d="M36 75h88v38a18 18 0 0 1-18 18H54a18 18 0 0 1-18-18z" fill="#b23a48"/>
+  <path d="M28 75h104M55 61c-11-15 8-19 0-33m26 33c-11-15 8-19 0-33m26 33c-11-15 8-19 0-33" fill="none" stroke="#173f5f" stroke-width="8" stroke-linecap="round"/>
+</svg>

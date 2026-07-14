@@ -2,34 +2,94 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Node.js - Schnelleinstieg | Tutorial-Sammlung</title>
 </head>
 <body>
   <header>
-    <h1>Tutorial-Sammlung</h1>
+    <div class="brand">
+      <img src="assets/img/logo.svg" alt="Logo der Tutorial-Sammlung">
+      <h1 class="site-title">Tutorial-Sammlung</h1>
+    </div>
   </header>
 
   <nav aria-label="Hauptnavigation">
     <a href="list.html">Kategorien</a>
     <a href="tutorials.html">Tutorials</a>
-    <a href="tutorial.html">Tutorial-Detail</a>
+    <a href="tutorial.html" aria-current="page">Tutorial-Detail</a>
+    <a href="form.html">Tutorial hinzufügen</a>
   </nav>
 
-  <main>
-    <article>
-      <h2>Node.js - Schnelleinstieg</h2>
-      <p><strong>Erschienen:</strong> <time datetime="2026-06-18">18.06.2026</time></p>
-      <p><a href="https://nodejs.org/">Zum Tutorial</a></p>
-    </article>
-  </main>
+  <div class="page-layout flex-layout">
+    <main>
+      <article class="tutorial-detail">
+        <figure class="detail-logo">
+          <img src="assets/img/node.svg" alt="Node.js Logo">
+          <figcaption>Grundlagen mit Node.js</figcaption>
+        </figure>
 
-  <aside>
-    <h2>Neue Tutorials</h2>
-    <ul>
-      <li>Node.js - Schnelleinstieg, 18.06.2026, 8 Min. 30 Sek.</li>
-      <li>Responsive Seiten mit CSS, 12.06.2026, 12 Min. 15 Sek.</li>
-    </ul>
-  </aside>
+        <h2>Node.js - Schnelleinstieg</h2>
+        <p><strong>Erschienen:</strong> <time datetime="2026-06-18">18.06.2026</time></p>
+        <p><strong>Dauer:</strong> 8 Min. 30 Sek.</p>
+        <p>Das Video führt durch die Installation von Node.js und zeigt, wie ein erstes Projekt und ein einfacher Webserver erstellt werden.</p>
+
+        <video controls preload="metadata" poster="assets/img/node.svg">
+          <source src="assets/vid/node-schnelleinstieg.mp4" type="video/mp4">
+          Dein Browser unterstützt das Video-Element nicht.
+        </video>
+
+        <table>
+          <caption>Kapitel des Videos</caption>
+          <thead>
+            <tr>
+              <th scope="col">Kapitel</th>
+              <th scope="col">Kurzbeschreibung</th>
+              <th scope="col">Dauer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Einleitung</th>
+              <td>Überblick über Node.js und die benötigten Werkzeuge</td>
+              <td>1 Min. 30 Sek.</td>
+            </tr>
+            <tr>
+              <th scope="row">Projekt anlegen</th>
+              <td>Ein neues Projekt mit npm vorbereiten</td>
+              <td>3 Min.</td>
+            </tr>
+            <tr>
+              <th scope="row">Webserver starten</th>
+              <td>Einen einfachen HTTP-Server erstellen und testen</td>
+              <td>4 Min.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="2" scope="row">Gesamtdauer</th>
+              <td>8 Min. 30 Sek.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </main>
+
+    <aside>
+      <h2>Neue Tutorials</h2>
+      <ul>
+        <li>
+          <a href="tutorial.html">Node.js - Schnelleinstieg</a>
+          <time datetime="2026-06-18">18.06.2026</time>
+          <span>8 Min. 30 Sek.</span>
+        </li>
+        <li>
+          <a href="tutorial.html">Responsive Seiten mit CSS</a>
+          <time datetime="2026-06-12">12.06.2026</time>
+          <span>12 Min. 15 Sek.</span>
+        </li>
+      </ul>
+    </aside>
+  </div>
 
   <footer>
     <small>&copy; 2026 Tutorial-Sammlung</small>

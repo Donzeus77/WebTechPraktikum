@@ -2,35 +2,82 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kategorien | Tutorial-Sammlung</title>
 </head>
 <body>
   <header>
-    <h1>Tutorial-Sammlung</h1>
+    <div class="brand">
+      <img src="assets/img/logo.svg" alt="Logo der Tutorial-Sammlung">
+      <h1 class="site-title">Tutorial-Sammlung</h1>
+    </div>
   </header>
 
   <nav aria-label="Hauptnavigation">
-    <a href="list.html">Kategorien</a>
+    <a href="list.html" aria-current="page">Kategorien</a>
     <a href="tutorials.html">Tutorials</a>
     <a href="tutorial.html">Tutorial-Detail</a>
+    <a href="form.html">Tutorial hinzufügen</a>
   </nav>
 
-  <main>
-    <h2>Kategorien</h2>
-    <ol>
-      <li><a href="tutorials.html">Web-Entwicklung</a></li>
-      <li><a href="tutorials.html">Kochen</a></li>
-      <li><a href="tutorials.html">Heimwerken</a></li>
-    </ol>
-  </main>
+  <div class="page-layout flex-layout">
+    <main>
+      <h2>Kategorien</h2>
+      <p>Wähle eine Kategorie aus, um die passenden Tutorials zu sehen.</p>
 
-  <aside>
-    <h2>Neue Tutorials</h2>
-    <ul>
-      <li>Node.js - Schnelleinstieg, 18.06.2026, 8 Min. 30 Sek.</li>
-      <li>Responsive Seiten mit CSS, 12.06.2026, 12 Min. 15 Sek.</li>
-    </ul>
-  </aside>
+      <ol class="tiles">
+        <li>
+          <a class="tile" href="tutorials.html">
+            <img src="assets/img/web.svg" alt="Bildschirm mit Programmcode">
+            <span>Web-Entwicklung</span>
+          </a>
+        </li>
+        <li>
+          <a class="tile" href="tutorials.html">
+            <img src="assets/img/cooking.svg" alt="Kochtopf">
+            <span>Kochen</span>
+          </a>
+        </li>
+        <li>
+          <a class="tile" href="tutorials.html">
+            <img src="assets/img/diy.svg" alt="Werkzeug">
+            <span>Heimwerken</span>
+          </a>
+        </li>
+        <li>
+          <a class="tile" href="tutorials.html">
+            <img src="assets/img/design.svg" alt="Farbpalette">
+            <span>Design</span>
+          </a>
+        </li>
+      </ol>
+
+      <form class="search-form" action="https://edu.inf.fhdortmund.de/tutorialService/testTutorialSearch.php" method="get">
+        <h2>Tutorial suchen</h2>
+        <div class="field">
+          <label class="required-label" for="search">Titel</label>
+          <input id="search" name="search" type="text" required minlength="4" maxlength="20" pattern="[A-ZÄÖÜ].{3,19}" placeholder="Zum Beispiel Node.js">
+        </div>
+        <button type="submit">Suchen!</button>
+      </form>
+    </main>
+
+    <aside>
+      <h2>Neue Tutorials</h2>
+      <ul>
+        <li>
+          <a href="tutorial.html">Node.js - Schnelleinstieg</a>
+          <time datetime="2026-06-18">18.06.2026</time>
+          <span>8 Min. 30 Sek.</span>
+        </li>
+        <li>
+          <a href="tutorial.html">Responsive Seiten mit CSS</a>
+          <time datetime="2026-06-12">12.06.2026</time>
+          <span>12 Min. 15 Sek.</span>
+        </li>
+      </ul>
+    </aside>
+  </div>
 
   <footer>
     <small>&copy; 2026 Tutorial-Sammlung</small>

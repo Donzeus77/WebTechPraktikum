@@ -2,42 +2,67 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web-Entwicklung | Tutorial-Sammlung</title>
 </head>
 <body>
   <header>
-    <h1>Tutorial-Sammlung</h1>
+    <div class="brand">
+      <img src="assets/img/logo.svg" alt="Logo der Tutorial-Sammlung">
+      <h1 class="site-title">Tutorial-Sammlung</h1>
+    </div>
   </header>
 
   <nav aria-label="Hauptnavigation">
     <a href="list.html">Kategorien</a>
-    <a href="tutorials.html">Tutorials</a>
+    <a href="tutorials.html" aria-current="page">Tutorials</a>
     <a href="tutorial.html">Tutorial-Detail</a>
+    <a href="form.html">Tutorial hinzufügen</a>
   </nav>
 
-  <main>
-    <h2>Tutorials: Web-Entwicklung</h2>
-    <article>
-      <h3><a href="tutorial.html">Node.js - Schnelleinstieg</a></h3>
-      <p><strong>Erschienen:</strong> <time datetime="2026-06-18">18.06.2026</time></p>
-      <p><strong>Dauer:</strong> 8 Min. 30 Sek.</p>
-      <p>Ein kurzer Einstieg in Node.js und die ersten Schritte mit einem eigenen Webserver.</p>
-    </article>
-    <article>
-      <h3><a href="tutorial.html">Responsive Seiten mit CSS</a></h3>
-      <p><strong>Erschienen:</strong> <time datetime="2026-06-12">12.06.2026</time></p>
-      <p><strong>Dauer:</strong> 12 Min. 15 Sek.</p>
-      <p>Das Tutorial erklärt fluide Layouts, Media Queries und sinnvolle Breakpoints.</p>
-    </article>
-  </main>
+  <div class="page-layout grid-layout">
+    <main>
+      <h2>Tutorials: Web-Entwicklung</h2>
 
-  <aside>
-    <h2>Neue Tutorials</h2>
-    <ul>
-      <li>Node.js - Schnelleinstieg, 18.06.2026, 8 Min. 30 Sek.</li>
-      <li>Responsive Seiten mit CSS, 12.06.2026, 12 Min. 15 Sek.</li>
-    </ul>
-  </aside>
+      <article class="tutorial-entry">
+        <figure class="tutorial-logo">
+          <img src="assets/img/node.svg" alt="Node.js Logo">
+          <figcaption>Node.js</figcaption>
+        </figure>
+        <h3><a href="tutorial.html">Node.js - Schnelleinstieg</a></h3>
+        <p><strong>Erschienen:</strong> <time datetime="2026-06-18">18.06.2026</time></p>
+        <p><strong>Dauer:</strong> 8 Min. 30 Sek.</p>
+        <p>Ein kurzer Einstieg in Node.js. Das Tutorial zeigt die Installation, das erste Projekt und einen kleinen Webserver.</p>
+      </article>
+
+      <article class="tutorial-entry">
+        <figure class="tutorial-logo">
+          <img src="assets/img/web.svg" alt="Bildschirm mit Programmcode">
+          <figcaption>Responsive CSS</figcaption>
+        </figure>
+        <h3><a href="tutorial.html">Responsive Seiten mit CSS</a></h3>
+        <p><strong>Erschienen:</strong> <time datetime="2026-06-12">12.06.2026</time></p>
+        <p><strong>Dauer:</strong> 12 Min. 15 Sek.</p>
+        <p>In diesem Tutorial werden fluide Layouts, Media Queries und sinnvolle Breakpoints an einem Beispiel erklärt.</p>
+      </article>
+    </main>
+
+    <aside>
+      <h2>Neue Tutorials</h2>
+      <ul>
+        <li>
+          <a href="tutorial.html">Node.js - Schnelleinstieg</a>
+          <time datetime="2026-06-18">18.06.2026</time>
+          <span>8 Min. 30 Sek.</span>
+        </li>
+        <li>
+          <a href="tutorial.html">Responsive Seiten mit CSS</a>
+          <time datetime="2026-06-12">12.06.2026</time>
+          <span>12 Min. 15 Sek.</span>
+        </li>
+      </ul>
+    </aside>
+  </div>
 
   <footer>
     <small>&copy; 2026 Tutorial-Sammlung</small>
