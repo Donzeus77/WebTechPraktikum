@@ -1,0 +1,99 @@
+form {
+  max-width: 48rem;
+}
+
+.search-form {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #edf6f9;
+}
+
+fieldset {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border: 0;
+  border-top: 2px solid #5b7c99;
+}
+
+legend {
+  padding: 0.3rem 0.75rem;
+  border-top: 2px solid #5b7c99;
+  border-bottom: 2px solid #5b7c99;
+  border-radius: 0.45rem;
+  color: #173f5f;
+  font-weight: 700;
+}
+
+.field {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0.9rem 0;
+}
+
+.field label,
+.radio-group > span {
+  font-weight: 700;
+}
+
+.required-label::after {
+  color: #9b2226;
+  content: " (Erforderliches Feld)";
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+input:not([type="radio"]):not([type="submit"]),
+select,
+textarea {
+  width: 100%;
+  padding: 0.65rem 0.4rem;
+  border: 0;
+  border-bottom: 2px solid #738a9c;
+  background: #f8fafc;
+  color: #243447;
+  font: inherit;
+}
+
+input[required]:not([type="radio"]):not([type="submit"]),
+select[required],
+textarea[required] {
+  border-left: 4px solid #5b7c99;
+}
+
+input:not([type="radio"]):not([type="submit"]):invalid:not(:placeholder-shown),
+select:invalid,
+textarea:invalid:not(:placeholder-shown) {
+  border-bottom-color: #b23a48;
+  background: #fff0f1;
+}
+
+.radio-group {
+  margin: 0.9rem 0;
+}
+
+.radio-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.4rem;
+}
+
+button,
+input[type="submit"] {
+  padding: 0.65rem 1.15rem;
+  border: 0;
+  border-radius: 0.55rem;
+  background: #146c94;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+button:hover,
+button:focus-visible,
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible {
+  background: #0b4f6c;
+}
