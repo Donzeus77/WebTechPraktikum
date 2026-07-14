@@ -13,3 +13,14 @@
   flex: 1 1 15rem;
 }
 
+@media (max-width: 768px) {
+  .flex-layout {
+    flex-direction: column;
+  }
+
+  .flex-layout main,
+  .flex-layout aside {
+    flex-basis: auto;
+    width: 100%;
+  }
+}

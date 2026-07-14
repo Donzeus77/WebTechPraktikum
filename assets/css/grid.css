@@ -14,3 +14,11 @@
   grid-area: aside;
 }
 
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-areas:
+      "main"
+      "aside";
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

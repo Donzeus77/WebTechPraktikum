@@ -211,3 +211,38 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.45rem;
+  }
+
+  header,
+  nav,
+  .page-layout {
+    width: min(100% - 1rem, 72rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    display: none;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  nav a {
+    display: block;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    text-align: center;
+  }
+
+  .tutorial-logo,
+  .detail-logo {
+    float: none;
+    width: 9rem;
+    margin: 0 auto 1rem;
+  }
+}
